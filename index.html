@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบประเมินโรคซึมเศร้า</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="notch"></div>
+        <div class="app-container">
+            <div class="brand">Bhumsyn</div>
+            
+            <div class="header">
+                <div class="header-image">
+                    <div class="character">
+                        <div class="cloud">
+                            <div class="rain"></div>
+                            <div class="rain"></div>
+                            <div class="rain"></div>
+                        </div>
+                        <div class="face">
+                            <div class="eye left"></div>
+                            <div class="eye right"></div>
+                            <div class="tear left"></div>
+                            <div class="tear right"></div>
+                            <div class="mouth"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="title">
+                    <h1>แบบประเมิน</h1>
+                    <h2>โรคซึมเศร้า</h2>
+                    <p>มาเช็คกันดู</p>
+                    <p>ช่วง 2 สัปดาห์ที่ผ่านมาท่านมีอาการดังต่อไปนี้บ่อยแค่ไหน</p>
+                </div>
+            </div>
+            
+            <div class="score-section">
+                <h3>เกณฑ์คะแนน</h3>
+                <div class="score-legend">
+                    <div class="score-item">ไม่เลย = 0</div>
+                    <div class="score-item">บางวัน = 1</div>
+                    <div class="score-item">ค่อนข้างบ่อย = 2</div>
+                    <div class="score-item">เกือบทุกวัน = 3</div>
+                </div>
+            </div>
+            
+            <form id="depressionForm">
+                <div class="questions-section">
+                    <div class="question-item">
+                        <div class="question-number">1</div>
+                        <div class="question-text">
+                            <div class="question-title">เบื่อ ทำอะไร ๆ ก็ไม่เพลิดเพลิน</div>
+                            <div class="options">
+                                <div class="option-item">
+                                    <input type="radio" name="q1" id="q1-0" value="0">
+                                    <label for="q1-0">ไม่เลย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q1" id="q1-1" value="1">
+                                    <label for="q1-1">บางวัน</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q1" id="q1-2" value="2">
+                                    <label for="q1-2">ค่อนข้างบ่อย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q1" id="q1-3" value="3">
+                                    <label for="q1-3">เกือบทุกวัน</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="question-item">
+                        <div class="question-number">2</div>
+                        <div class="question-text">
+                            <div class="question-title">ไม่สบายใจ,ซึมเศร้า,ท้อแท้</div>
+                            <div class="options">
+                                <div class="option-item">
+                                    <input type="radio" name="q2" id="q2-0" value="0">
+                                    <label for="q2-0">ไม่เลย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q2" id="q2-1" value="1">
+                                    <label for="q2-1">บางวัน</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q2" id="q2-2" value="2">
+                                    <label for="q2-2">ค่อนข้างบ่อย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q2" id="q2-3" value="3">
+                                    <label for="q2-3">เกือบทุกวัน</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="question-item">
+                        <div class="question-number">3</div>
+                        <div class="question-text">
+                            <div class="question-title">รู้สึกไม่ดีกับตัวเองคิดว่าตัวเองล้มเหลว หรือเป็นคนทำให้ตัวเองหรือครอบครัวผิดหวัง</div>
+                            <div class="options">
+                                <div class="option-item">
+                                    <input type="radio" name="q3" id="q3-0" value="0">
+                                    <label for="q3-0">ไม่เลย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q3" id="q3-1" value="1">
+                                    <label for="q3-1">บางวัน</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q3" id="q3-2" value="2">
+                                    <label for="q3-2">ค่อนข้างบ่อย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q3" id="q3-3" value="3">
+                                    <label for="q3-3">เกือบทุกวัน</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="question-item">
+                        <div class="question-number">4</div>
+                        <div class="question-text">
+                            <div class="question-title">คิดทำร้ายตนเองหรือคิดว่าตายๆไปคงจะดี</div>
+                            <div class="options">
+                                <div class="option-item">
+                                    <input type="radio" name="q4" id="q4-0" value="0">
+                                    <label for="q4-0">ไม่เลย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q4" id="q4-1" value="1">
+                                    <label for="q4-1">บางวัน</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q4" id="q4-2" value="2">
+                                    <label for="q4-2">ค่อนข้างบ่อย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q4" id="q4-3" value="3">
+                                    <label for="q4-3">เกือบทุกวัน</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="question-item">
+                        <div class="question-number">5</div>
+                        <div class="question-text">
+                            <div class="question-title">สมาธิไม่ดีเวลาทำอะไร เช่น ดูโทรทัศน์ ฟังวิทยุหรือทำงานที่ต้องใช้ความตั้งใจ</div>
+                            <div class="options">
+                                <div class="option-item">
+                                    <input type="radio" name="q5" id="q5-0" value="0">
+                                    <label for="q5-0">ไม่เลย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q5" id="q5-1" value="1">
+                                    <label for="q5-1">บางวัน</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q5" id="q5-2" value="2">
+                                    <label for="q5-2">ค่อนข้างบ่อย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q5" id="q5-3" value="3">
+                                    <label for="q5-3">เกือบทุกวัน</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="question-item">
+                        <div class="question-number">6</div>
+                        <div class="question-text">
+                            <div class="question-title">พูดหรือทำอะไรช้าจนคนอื่นมองเห็น หรือกระสับกระส่ายจนท่านอยู่ไม่นิ่งเหมือนเคย</div>
+                            <div class="options">
+                                <div class="option-item">
+                                    <input type="radio" name="q6" id="q6-0" value="0">
+                                    <label for="q6-0">ไม่เลย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q6" id="q6-1" value="1">
+                                    <label for="q6-1">บางวัน</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q6" id="q6-2" value="2">
+                                    <label for="q6-2">ค่อนข้างบ่อย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q6" id="q6-3" value="3">
+                                    <label for="q6-3">เกือบทุกวัน</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="question-item">
+                        <div class="question-number">7</div>
+                        <div class="question-text">
+                            <div class="question-title">หลับยากหรือหลับๆตื่นๆหรือหลับมากไป</div>
+                            <div class="options">
+                                <div class="option-item">
+                                    <input type="radio" name="q7" id="q7-0" value="0">
+                                    <label for="q7-0">ไม่เลย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q7" id="q7-1" value="1">
+                                    <label for="q7-1">บางวัน</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q7" id="q7-2" value="2">
+                                    <label for="q7-2">ค่อนข้างบ่อย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q7" id="q7-3" value="3">
+                                    <label for="q7-3">เกือบทุกวัน</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="question-item">
+                        <div class="question-number">8</div>
+                        <div class="question-text">
+                            <div class="question-title">เบื่ออาหาร/กินมากเกินไป</div>
+                            <div class="options">
+                                <div class="option-item">
+                                    <input type="radio" name="q8" id="q8-0" value="0">
+                                    <label for="q8-0">ไม่เลย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q8" id="q8-1" value="1">
+                                    <label for="q8-1">บางวัน</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q8" id="q8-2" value="2">
+                                    <label for="q8-2">ค่อนข้างบ่อย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q8" id="q8-3" value="3">
+                                    <label for="q8-3">เกือบทุกวัน</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="question-item">
+                        <div class="question-number">9</div>
+                        <div class="question-text">
+                            <div class="question-title">เหนื่อยง่าย/ไม่ค่อยมีแรง</div>
+                            <div class="options">
+                                <div class="option-item">
+                                    <input type="radio" name="q9" id="q9-0" value="0">
+                                    <label for="q9-0">ไม่เลย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q9" id="q9-1" value="1">
+                                    <label for="q9-1">บางวัน</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q9" id="q9-2" value="2">
+                                    <label for="q9-2">ค่อนข้างบ่อย</label>
+                                </div>
+                                <div class="option-item">
+                                    <input type="radio" name="q9" id="q9-3" value="3">
+                                    <label for="q9-3">เกือบทุกวัน</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-button">ประเมินผล</button>
+                
+                <div class="results-section" id="results-container">
+                    <h3 style="text-align: center; margin-bottom: 15px;">คำนวนผลคะแนนจากแบบทดสอบ</h3>
+                    
+                    <div class="result-range">5-8</div>
+                    <p style="text-align: center; margin-bottom: 10px;">มีความผิดปกติแต่ยังไม่มีภาวะซึมเศร้า</p>
+                    
+                    <div class="result-range">9-14</div>
+                    <p style="text-align: center; margin-bottom: 10px;">มีภาวะซึมเศร้าเล็กน้อย</p>
+                    
+                    <div class="result-range">15-19</div>
+                    <p style="text-align: center; margin-bottom: 10px;">มีภาวะซึมเศร้าปานกลาง</p>
+                    
+                    <div class="result-range">≥20</div>
+                    <p style="text-align: center; margin-bottom: 10px;">มีภาวะซึมเศร้ารุนแรง</p>
+                    
+                    <div id="result" class="result-message"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- ป๊อปอัพแสดงผลประเมินแบบใหม่ -->
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="result-popup">
+            <div class="popup-header">
+                <div class="popup-title">ผลการประเมิน</div>
+            </div>
+            
+            <div class="score-badge" id="score-badge">
+                คะแนนรวม: 0 คะแนน
+            </div>
+            
+            <div class="result-label" id="result-label">
+                ผลการประเมิน
+            </div>
+            
+            <div class="result-detail" id="result-detail">
+                รายละเอียดผลการประเมิน
+            </div>
+            
+            <div class="score-details-title">คะแนนแต่ละข้อ:</div>
+            <div class="score-details" id="score-details">
+                <!-- คะแนนแต่ละข้อจะถูกเพิ่มที่นี่ -->
+            </div>
+            
+            <button id="close-popup" class="close-button">ปิดและดูผลแบบละเอียด</button>
+            
+            <!-- เอฟเฟกต์ confetti (จะถูกสร้างด้วย JavaScript) -->
+            <div id="confetti-container"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
